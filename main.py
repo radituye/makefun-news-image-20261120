@@ -37,6 +37,11 @@ def ship_front_page() -> Path:
     shutil.copyfile(source, target)
     if target.stat().st_size != source.stat().st_size:
         raise ValueError("entry.png copy came out the wrong size")
+    # Read the copy back: a complete copy starts with the same PNG magic.
+    with target.open("rb") as handle:
+        copied_magic = handle.read(len(PNG_MAGIC))
+    if copied_magic != PNG_MAGIC:
+        raise ValueError("entry.png copy is not a PNG file")
     return target
 
 
