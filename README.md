@@ -25,9 +25,11 @@ Korean exports topping $1tn for the first time.
 `entry.png` is 1024×1024, 479,154 bytes. The lead photograph — the
 White House briefing room at dusk, podium and flags waiting for the
 press conference — was generated for this entry, and every word on the
-page is drawn with DejaVu so the text stays sharp at any size. Each
-story was checked against the day's reporting (Reuters, BBC, The Times
-of India, The Hindu, SimpleLife, 20 Nov 2026) before the page was
+page is drawn with DejaVu so the text stays sharp at any size. The
+front page itself was drawn with Pillow from the generated photograph;
+no part of it is a screenshot of another publication. Each story was
+checked against the day's reporting (Reuters, BBC, The Times of
+India, The Hindu, SimpleLife, 20 Nov 2026) before the page was
 drawn. The six boxes, left to right, are the Myanmar verdict, the
 Houthi/Gulf attacks, Cyclone Akvan, the Anthropic IPO, GTA VI sales,
 and Voyager 1.
